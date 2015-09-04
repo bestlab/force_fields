@@ -1,0 +1,8 @@
+[ moleculetype ]
+; molname	nrexcl
+SOL		2
+
+[ atoms ]
+; id  at type     res nr  res name  at name  cg nr  charge    mass
+  1   OW          1       SOL       OW       1      0.00    16.00000
+
