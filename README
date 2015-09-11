@@ -1,4 +1,8 @@
 
-Various force fields.
+Various force fields, in both gromacs and Amber format.
 
-Chromphore force fields are included in amber03-star, amber03w and amber03ws
+Chromophore force fields are included in amber03-star, amber03w and amber03ws
+
+For CHARMM force fields, please see Alex Mackerell's website:
+http://mackerell.umaryland.edu/charmm_ff.shtml
+
