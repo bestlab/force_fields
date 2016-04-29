@@ -18,8 +18,8 @@ ff99SBxildn: amber ff99SB*-ILDN (Best, Hummer, JPCB 2009 and Lindorff-Larsen et 
 one just does a "source leaprc.ff03x" in leap, e.g., to use ff03*.
 
 GROMACS:
-amber03-star: amber ff03*
-amber03w: amber ff03w
-amber03ws: amber ff03ws
-
+amber03-star: amber ff03* (Best, Hummer, 2009)
+amber03w: amber ff03w (Best, Mittal, 2015)
+amber03ws: amber ff03ws (Best, Zheng, Mittal, 2014)
+denaturants-amber03ws: urea and gdmcl force fields (Zheng, Best, JCTC, 2015)
 
