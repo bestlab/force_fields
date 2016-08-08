@@ -3666,7 +3666,7 @@
  [ impropers ]
     -C    CA     N     H
     CA    +N     C     O
-    N     CA     C    +N    285.5        0.75        1
+    N     CA     C    +N    285.5        1.5        1
 
 [ S488 ]	; AlexaFlour 488 attached to cysteine, based on R6G
  [ atoms ]
@@ -3855,7 +3855,7 @@
  [ impropers ]
     -C    CA     N     H
     CA    +N     C     O
-    N     CA     C    +N    285.5        0.75        1
+    N     CA     C    +N    285.5        1.5        1
 
 [ C488 ]	; AlexaFlour 488 attached to cysteine at C-terminus
  [ atoms ]
@@ -4308,7 +4308,7 @@
  [ impropers ]
     -C    CA     N     H
     CA    +N     C     O
-    N     CA     C    +N    285.5        0.75       1
+    N     CA     C    +N    285.5        1.5       1
 
 
 [ N594 ]	; AlexaFlour 594 attached to cysteine, based on R6G
@@ -4574,7 +4574,7 @@
  [ impropers ]
     -C    CA     N     H
     CA    +N     C     O
-    N     CA     C    +N    285.5        0.75       1
+    N     CA     C    +N    285.5        1.5       1
 
 
 [ C594 ]	; AlexaFlour 594 attached to cysteine at C-terminus
