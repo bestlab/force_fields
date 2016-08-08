@@ -1,6 +1,7 @@
 AMBER99SB* modification of ff99SB (Best and Hummer, J. Phys. Chem. B, 113, 9004-9015, 2009)
 combined with
 AMBER99SB-ILDN force field (Lindorff-Larsen et al., Proteins 78, 1950-58, 2010)
+AMBER99SB-ILDN-Q force field (Best, De Sancho and Mittal, Biophys. J. 102:1462-1467, 2012)
 
 ********************************************************************
 * Amber99sb-ildn is an improvement to Amber99SB by                 *

@@ -5,7 +5,7 @@ SOL		1
 
 [ atoms ]
 ; 	at type	      res nr  res name	at name	      cg nr	charge	   mass
-1       OW_tip4piana 	1	SOL	 OW		1	0        16.00000
+1       OW_tip4pD 	1	SOL	 OW		1	0        16.00000
 2	HW       	1	SOL	HW2		1	0.5800 	  1.00800
 3	HW	        1	SOL	HW3		1	0.5800 	  1.00800
 4	MW		1	SOL	MW4		1      -1.1600    0.00000
