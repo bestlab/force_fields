@@ -1,4 +1,25 @@
 
-Various force fields.
+Various force fields, in both gromacs and Amber format.
 
-Chromphore force fields are included in amber03-star, amber03w and amber03ws
+Chromophore force fields are included in amber03-star, amber03w and amber03ws
+
+For CHARMM force fields, please see Alex Mackerell's website:
+http://mackerell.umaryland.edu/charmm_ff.shtml
+
+Some details:
+
+AMBER:
+amber_format/dat/leap... basically this stuff needs to go into the corresponding dat/leap folder of your amber installation.
+e.g. for Amber 14, do a git pull and then do something like 'cp -r amber_format/dat/leap blahblah/amber12/dat'. 
+The force fields are:
+ff03x: amber ff03* (Best, Hummer, JPCB 2009)
+ff99SBx: amber ff99SB* (Best, Hummer, JPCB 2009)
+ff99SBxildn: amber ff99SB*-ILDN (Best, Hummer, JPCB 2009 and Lindorff-Larsen et al, Proteins, 2011 for ILDN part)
+one just does a "source leaprc.ff03x" in leap, e.g., to use ff03*.
+
+GROMACS:
+amber03-star: amber ff03* (Best, Hummer, 2009)
+amber03w: amber ff03w (Best, Mittal, 2015)
+amber03ws: amber ff03ws (Best, Zheng, Mittal, 2014)
+denaturants-amber03ws: urea and gdmcl force fields (Zheng, Best, JCTC, 2015)
+
