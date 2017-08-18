@@ -10,16 +10,26 @@ Some details:
 
 AMBER:
 amber_format/dat/leap... basically this stuff needs to go into the corresponding dat/leap folder of your amber installation.
-e.g. for Amber 14, do a git pull and then do something like 'cp -r amber_format/dat/leap blahblah/amber12/dat'. 
+e.g. for Amber 14, do a git pull and then do something like 'cp -r amber_format/dat/leap blahblah/amber14/dat'. 
 The force fields are:
 ff03x: amber ff03* (Best, Hummer, JPCB 2009)
 ff99SBx: amber ff99SB* (Best, Hummer, JPCB 2009)
 ff99SBxildn: amber ff99SB*-ILDN (Best, Hummer, JPCB 2009 and Lindorff-Larsen et al, Proteins, 2011 for ILDN part)
-one just does a "source leaprc.ff03x" in leap, e.g., to use ff03*.
+ff03w: amber ff03w (Best, Mittal, JPCB, 2010)
+ff03ws: amber ff03ws (Best, Zheng, Mittal, JCTC 2014)
 
+-- for most, one just does a "source leaprc.ff03x" in leap, e.g., to use ff03*. To use ff03ws requires a 
+two-step setup described in the README for the amber force fields.
+ 
 GROMACS:
 amber03-star: amber ff03* (Best, Hummer, 2009)
-amber03w: amber ff03w (Best, Mittal, 2015)
+amber99sb-star: amber ff99SB* (Best, Hummer, 2009)
+amber99sb-star-ildn: amber ff99SB*-ILDN (Best, Hummer, 2009 and Lindorff-Larsen et al, Proteins, 2011 for ILDN part)
+amber99sb-star-ildn-q: amber ff99SB*-ILDN-q (same as above, but with backbone charge mods 
+                                             as described in Best, De Sancho, Mittal, Biophys. J. 2012)
+amber03w: amber ff03w (Best, Mittal, 2010)
 amber03ws: amber ff03ws (Best, Zheng, Mittal, 2014)
-denaturants-amber03ws: urea and gdmcl force fields (Zheng, Best, JCTC, 2015)
+amber99sbw: amber ff99SBw (ref?)
+amber99sbws: amber ff99SBws (Best, Zheng, Mittal, 2014 -- see the SI)
 
+denaturants-amber03ws: urea and gdmcl force fields (Zheng, Best, JCTC, 2015)

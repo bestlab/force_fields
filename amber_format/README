@@ -1,10 +1,35 @@
 
 Here we have the following force fields in Amber format:
 
-Amber ff99SB* -- use leaprc.ff99SBx
-Amber ff99SB*-ILDN -- use leaprc.ff99SBxildn
-Amber ff03* -- use leaprc.ff03x
-Amber ff03w -- use leaprc.ff03w and T45 water model
+> Amber ff99SB* -- use leaprc.ff99SBx
+  This force field applies a correction to the psi torsion angle in ff99SB to fix 
+  (very slightly) too low helix propensity, based on NMR estimates of helix content 
+  in model peptides [Best & Hummer, JPCB, v113, p9004, 2009]
+  
+> Amber ff99SB*-ILDN -- use leaprc.ff99SBxildn
+  This is a combination of ff99SB* with the ILDN correction to Ile, Leu, Asp, Asn 
+  side-chains by Lindorff-Larsen et al [Proteins, v78, p1950, 2010]
+  
+> Amber ff03* -- use leaprc.ff03x
+  This force field applies a correction to the psi torsion angle in ff03 to fix 
+  (substantially) too high helix propensity, based on NMR estimates of helix 
+  content in model peptides [Best & Hummer, JPCB, v113, p9004, 2009]
+  
+> Amber ff03w -- use leaprc.ff03w and T45 water model
+  This builds on ff03*, but reoptimizes the psi torsion angle correction to be 
+  compatible with the TIP4P/2005 water model of Abascal and Vega 
+  [Best & Mittal, JPCB, v114, p14916, 2010]]
+  
+> Amber ff03ws -- start as for Amber ff03w above, then post-process your prmtop file 
+  generated with leap using ff03w with the script "ff03w-to-ff03ws.py". 
+  This force field optimizes protein-water interactions in conjunction with the 
+  TIP4P/2005 water model, to avoid overly compact unfolded/disordered states and too 
+  high affinity binding. [Best, Zheng, Mittal, JCTC, v10, p5113, 2014]
+  
+The above force fields modify only the protein component. They have been verified 
+to give the same energies, in conjunction with AMBER, as obtained using Gromacs 
+with the Gromacs-format force fields in this distribution. Owing to the way the 
+dihedral corrections are implemented, there is a constant energy offset between the 
+AMBER and GROMACS dihedral energies which is irrelevant for sampling in molecular 
+simulations. 
 
-to use ff03ws, you need to post-process your prmtop file generated 
-with leap using ff03w with the script "ff03w-to-ff03ws.py" 
