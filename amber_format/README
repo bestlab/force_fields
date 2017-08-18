@@ -5,6 +5,5 @@ Amber ff99SB* -- use leaprc.ff99SBx
 Amber ff99SB*-ILDN -- use leaprc.ff99SBxildn
 Amber ff03* -- use leaprc.ff03x
 Amber ff03w -- use leaprc.ff03w and T45 water model
-
-to use ff03ws, you need to post-process your prmtop file generated 
+Amber ff03ws -- start as for Amber ff03w above, then post-process your prmtop file generated 
 with leap using ff03w with the script "ff03w-to-ff03ws.py" 
