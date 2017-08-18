@@ -1,0 +1,21 @@
+;
+;	User spoel (236)
+;	Wed Nov  3 17:12:44 1993
+;	Input file
+;
+cpp                 =  /lib/cpp
+define              =  -DFLEX_SPC
+constraints         =  none
+integrator          =  cg
+;
+
+nstcomm             =  1
+nsteps = 1000
+ns_type             =  simple
+pbc = no
+rlist               =  0.9
+rcoulomb            =  0.9
+rvdw                =  0.9
+Tcoupl              =  no
+Pcoupl              =  no
+gen_vel             =  no

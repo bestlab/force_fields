@@ -1,0 +1,13 @@
+ 
+This example illustrates a complete setup of Alheimer's beta 40 peptide 
+conjugated to two chromophores at the termini.
+
+The python script first adds the dyes to the included PDB file (which 
+could be an experimental protein structure or, as in this case, generated 
+by an external tool such as amber tools. It does this using the 
+"../build_dyes_amberdye.py" script from this distribution together
+with the patched pdb files for the dyes.
+
+The script then goes through the various steps of generating the topology,
+minimizing, adding solvent etc.
+

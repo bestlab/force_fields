@@ -1,0 +1,17 @@
+
+Some notes on how using ff03w differs from e.g. ff03 or ff99SB.
+
+1. The tip4p2005 water model is not in the list of water models
+	in pdb2gmx (this list is hard coded). You need to therefore
+	use standard tip4p to generate the topology, but then 
+	switch the 'tip4p.itp' file included in your system .itp
+	file with 'tip4p2005.itp'
+
+2. When generating a solvent box, with genbox, use the option
+	'-cs amber03w.ff/tip4p2005.gro'
+	(The geometries of tip4p2005 and tip4p are different)
+
+3. Be aware that any unfolded/disordered chains may be less
+	collapsed than with ff99SBabcxyz or ff03, so you may 
+	need to use a larger box. 
+

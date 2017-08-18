@@ -1,0 +1,6 @@
+
+source leaprc.ff03.r1
+pep = sequence { NALA ALA CALA } 
+saveAmberParm pep ala3.prmtop ala3.inpcrd
+savePdb pep ala3.pdb
+quit 

@@ -1,0 +1,20 @@
+
+cpp                 =  /lib/cpp
+;constraints         =  all-bonds
+constraints         =  hbonds
+integrator          =  sd
+dt                  = .002  ; ps
+tc-grps           = System
+tau_t               = 5.0  
+ref_t               = 500.
+nsteps = 50000
+nstcomm             =  10
+ns_type             =  grid
+pbc = xyz
+epsilon_r = 80.
+rlist               =  0.9
+rcoulomb            =  0.9
+rvdw                =  0.9
+gen_vel             = yes
+gen_temp            = 500.
+gen_seed            = 27041994

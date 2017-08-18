@@ -1,0 +1,56 @@
+The files in this Folder under GNU Lesser General Public License (LGPL) Version 2.1 contain the AMBER-DYES Force Field Parameters [Graen et al. (20014) JCTC (dx.doi.org/10.1021/ct500869p)] in combination with the AMBER99sb Protein Force Field [Hornak et al. (2006). Proteins 65, 712-725] for the Gromacs 4.5/4.6/5.0 Molecular Dynamics Program [http://www.gromacs.org/]
+
+USAGE:
+The force field can be used like any gromacs force field by placing the folder amber99sb_dyes.ff into the share/gromacs/top folder under the local gromacs install, or redirecting the GMXLIB path to the location of the folder by setting
+export GMXLIB=PATHTOFOLDER/amber99sb_dyes.ff
+or by placing the amber99sb_dyes.ff folder in the current working directory together with the PDB and .mdp files.
+To use the force field, prepare your protein PDB file in VMD or PYMOL by attaching labels from the PDB_structures folder to your protein. All supported labels can be found in the PDB_structures folder, though custom dye-linker combinations may also work. For this, do not forget to add your combination to the specbond file. Your protein PDB file can now be processed by pdb2gmx and grompp like any other protein system. An energy minimization prior to production simulations using the robust steepest descent algorithm is recommended.
+
+ORGANIZATION OF THE FILES:
+All AMBER-DYES parameters are labeled with "; AMBER-DYES" at the end of the line
+Label structures can be found in the PDB_structures folder (attach these labels to your protein).
+Charge parameters and residue atom information can be found in the amber99sb_dyes.ff/aminoacids.rtp.
+Bonded and nonbonded parameters are located in amber99sb_dyes.ff/ffbonded.itp and amber99sb_dyes.ff/ffnonbonded.itp, respectively.
+Atom types are located in amber99sb_dyes.ff/atomtypes.atp
+
+
+======================================================================
+
+RB: 11/30/2016
+
+************ PATCHES ************
+
+* The force field has been patched to correct the structure of the 
+maleimide adducts. Patched PDB files and a patched force field are in 
+"PDB_structures_patch" and "amber99sb_dyes_patch.ff", which should be 
+used instead of "original/PDB_structures" and "original amber99sb_dyes.ff". 
+These patched files were generated automatically using the script 
+"patch_amberdyes.py", in conjunction with the manually patched 
+"ffbonded_patched.itp" and the script "build_dyes_amberdye.py" (see below).
+
+************ ADDING DYES TO STRUCTURES ************
+
+* The script build_dyes_amberdye.py will replace a selected residue in a 
+protein PDB file with a specified dye PDB in such a way that running "pdb2gmx" 
+and doing a minimization should be sufficient to generate a final topology 
+and gro suitable for running simulations.
+
+************* PROTEIN FORCE FIELDS *****************
+
+* The dyes are supplied in combination with three protein force fields:
+
+* Amber ff99SBws force field (amber99sbws_amberdye.ff): RECOMMENDED.
+This includes water scaling to balance protein/dye -- water interactions
+and in our experience is most consistent with experiment.
+
+* Amber ff03ws force field (amber03ws_amberdye.ff): OK. Includes water
+scaling to balance protein/dye -- water interactions.
+[Best, Zheng, Mittal, JCTC, 2014]
+
+[Best, Zheng, Mittal, JCTC, 2014]
+- Amber ff99sb force field (amber99sb_dyes_patch.ff). NOT RECOMMENDED.
+This is the original force field used in the AMER DYES paper. However, 
+it is recommended that one of the force fields above is used instead 
+as in our experience this combination leads to the dyes sticking to the 
+protein and poor agreement with experimental anisotropy data.
+

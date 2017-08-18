@@ -1,0 +1,17 @@
+
+cpp                 =  /lib/cpp
+define              =  -DFLEX_SPC
+constraints         =  none
+integrator          =  steep
+nsteps = 100
+;
+
+nstcomm             =  1
+ns_type             =  grid
+pbc = xyz
+rlist               =  0.9
+rcoulomb            =  0.9
+rvdw                =  0.9
+Tcoupl              =  no
+Pcoupl              =  no
+gen_vel             =  no
