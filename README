@@ -29,7 +29,7 @@ GROMACS:
 - amber03-star: amber ff03* ([Best, Hummer, JPCB 2009](http://pubs.acs.org/doi/abs/10.1021/jp901540t))
 - amber99sb-star: amber ff99SB* ([Best, Hummer, JPCB 2009](http://pubs.acs.org/doi/abs/10.1021/jp901540t))
 - amber99sb-star-ildn: amber ff99SB*-ILDN ([Best, Hummer, JPCB 2009](http://pubs.acs.org/doi/abs/10.1021/jp901540t) and Lindorff-Larsen et al, Proteins, 2011 for ILDN part)
-- amber99sb-star-ildn-q: amber ff99SB*-ILDN-q (same as above, but with backbone charge mods as described in Best, De Sancho, Mittal, Biophys. J. 2012)
+- amber99sb-star-ildn-q: amber ff99SB*-ILDN-q (same as above, but with backbone charge mods as described in [Best, De Sancho, Mittal, Biophys. J. 2012](https://doi.org/10.1016/j.bpj.2012.02.024)
 
 ⋅⋅  
 - amber03w: amber ff03w ([Best, Mittal, 2010](https://www.ncbi.nlm.nih.gov/pubmed/20536262))
