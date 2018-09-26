@@ -1751,7 +1751,7 @@
     -C     N
  [ dihedrals ]
      N    CA    CB   CG2        torsion_ILE_N_CA_CB_CG2_mult1
-     B    CA    CB   CG2        torsion_ILE_N_CA_CB_CG2_mult2
+     N    CA    CB   CG2        torsion_ILE_N_CA_CB_CG2_mult2
  [ impropers ]
     -C    CA     N     H    
     CA   OC1     C   OC2    
@@ -2907,7 +2907,7 @@
      C    +N
  [ dihedrals ]
      N    CA    CB   CG2        torsion_ILE_N_CA_CB_CG2_mult1
-     B    CA    CB   CG2        torsion_ILE_N_CA_CB_CG2_mult2
+     N    CA    CB   CG2        torsion_ILE_N_CA_CB_CG2_mult2
  [ impropers ]
     CA    +N     C     O
     N     CA     C    +N    105.4       0.75       1
