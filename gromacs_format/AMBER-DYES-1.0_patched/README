@@ -1,3 +1,10 @@
+RB 4/29/2024
+
+Some new updates, including CF660R, Cy3B and Atto532 
+Also new linkers C3C and C2R with protein backbone
+charges set to those from protein force field.
+
+amber99sbws_amberdye_star.ff has the latest.
 
 RB: 11/30/2016
 
