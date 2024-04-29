@@ -1,0 +1,8 @@
+tip4p2005s TIP4P/2005 for use with scaled protein-water interactions
+tip4p2005  TIP4P/2005 TIP 4-point optimized in 2005
+tip3p      TIP3P     TIP 3-point, recommended
+tip4p      TIP4P     TIP 4-point
+tip4pew    TIP4P-Ew  TIP 4-point optimized with Ewald, recommended 
+tip4p-D    TIP4P-D   TIP 4-point with larger dispersion
+spc        SPC       simple point charge
+spce       SPC/E     extended simple point charge
